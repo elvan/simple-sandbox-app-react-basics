@@ -15,6 +15,7 @@
     ></script>
     <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
   </head>
+
   <body>
     <h1>My Website</h1>
 
@@ -30,6 +31,13 @@
         const subtitle = 'This is a website for learning react';
         const address = 'https://www.google.com';
 
+        const handleClick = (event) => {
+          console.log('You clicked me!');
+          console.log('The site title is: ' + title);
+          console.log('The site subtitle is: ' + subtitle);
+          console.log(event);
+        };
+
         return (
           <div className='banner'>
             <h2>{title.toUpperCase()}</h2>
@@ -39,6 +47,9 @@
             <a href={address} target='_blank'>
               Google Website
             </a>
+            <p>
+              <button onClick={handleClick}>Click Me</button>
+            </p>
           </div>
         );
       };
