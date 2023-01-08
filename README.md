@@ -1,1 +1,1 @@
-# sandbox-react-basics
+# simple-sandbox-app-react-basics
